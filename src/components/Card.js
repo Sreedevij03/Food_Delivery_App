@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Card() {
+export default function Card({props}) {
   return (
     <div>
       <div className="card mt-3" style={{ width: "18rem", maxHeight: "360px" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">{props.foodName}</h5>
           <p className="card-text">Hello world welcome to Go Food</p>
           <div className="container w-100">
             <select
